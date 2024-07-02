@@ -6,7 +6,12 @@ The autopilot service is an on-board module that controls the operation of the f
 Dashboard or mobile applications will requiere the autopilot service to connect to the flight controller, to arm the drone, take-off, go to a certain position or move in a given direction, land, stop, etc. See the table bellow for a complete list of commands that can be accepted by the autopilot service in its current version.
 
 ## Installations
-In order to run and contribute you must install Python 3.7. We recommend PyCharm as IDE for development.    
+In order to run and contribute you must install Python 3.7. We recommend PyCharm as IDE for development. In addition, you must install the broker Mosquitto. The internal broker will be always run in localhome, port 1884, in your laptop when working in simulation mode. You must edit the configuration file (mosquitto.conf) with the following lines:
+
+![image](https://github.com/eloimoncho/AutopilotService/assets/91852608/a2e2edb8-38d4-488a-afdc-a8cb2b4a872e)
+
+And then run the file with the command: mosquitto -v -c mosquitto.conf
+
 Contributions must follow the contribution protocol that you will find in the main repo of the Drone Engineering Ecosystem.
 [![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-MainRepo-brightgreen.svg)](https://github.com/dronsEETAC/DroneEngineeringEcosystemDEE)
 
